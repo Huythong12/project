@@ -4,3 +4,5 @@ seaborn
 matplotlib
 plotly
 openpyxl
+streamlit-lottie
+streamlit-extras
