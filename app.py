@@ -27,6 +27,9 @@ app_mode = st.sidebar.selectbox(
 # Introduction Section
 if app_mode == "CustomerCustomer Shopping Trends":
     st.title(" CustomerCustomer Shopping Trends")
+  tab1, tab2 = st.tabs(["📊 Dashboard", "📖 Introduction"])
+
+with tab2:
     st.markdown("""
     ### Welcome to the Customer Shopping Trends!
 
@@ -37,7 +40,7 @@ if app_mode == "CustomerCustomer Shopping Trends":
     - How frequently customers shop?
     - What are the top trending products?
 
-    Let's dive into the world of shopping trends and consumer analytics! 🛍️📊
+    Let's dive into the world of shopping trends and consumer analytics! 📊📈
     """)
     
     st.image(
