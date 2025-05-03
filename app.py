@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-st.set_page_config(page_title=" Customer Shopping Trends", layout="wide")
+st.set_page_config(page_title="Customer Shopping Trends", layout="wide")
 
 @st.cache_data
 def load_data():
@@ -25,29 +25,29 @@ app_mode = st.sidebar.selectbox(
 )
 
 # Introduction Section
-if app_mode == "CustomerCustomer Shopping Trends":
-st.title(" CustomerCustomer Shopping Trends")
-tab1, tab2 = st.tabs(["📊 Dashboard", "📖 Introduction"])
+if app_mode == "🧭 Introduction - Shopping Trends":
+    st.title("🧭 Customer Shopping Trends")
+    tab1, tab2 = st.tabs(["📊 Dashboard", "📖 Introduction"])
 
-with tab2:
-st.markdown("""
-### Welcome to the Customer Shopping Trends!
+    with tab2:
+        st.markdown("""
+        ### Welcome to the Customer Shopping Trends!
 
-In this dashboard, we explore insights from shopping behavior data, helping businesses and analysts uncover patterns in customer purchases.
+        In this dashboard, we explore insights from shopping behavior data, helping businesses and analysts uncover patterns in customer purchases.
 
-**What you'll learn:**
-- Who buys what?
-- How frequently customers shop?
-- What are the top trending products?
+        **What you'll learn:**
+        - Who buys what?
+        - How frequently customers shop?
+        - What are the top trending products?
 
-Let's dive into the world of shopping trends and consumer analytics! 📊📈
-""")
-    
-st.image(
-"https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=1600&q=80",
- caption="Shopping behavior insights",
- use_column_width=True
-)
+        Let's dive into the world of shopping trends and consumer analytics! 📊📈
+        """)
+
+    st.image(
+        "https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=1600&q=80",
+        caption="Shopping behavior insights",
+        use_column_width=True
+    )
 
 # Purchase Frequency Analysis
 elif app_mode == "📅 Purchase Frequency Analysis":
